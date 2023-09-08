@@ -4,7 +4,7 @@ RUN groupadd -r myuser && useradd -r -g myuser myuser
 
 USER root 
 
-WORKDIR /portfolio-template
+WORKDIR /streamlit-chatbot-template
 
 COPY . .
 
@@ -14,5 +14,5 @@ EXPOSE 8501
 
 ENTRYPOINT ["streamlit", "run"]
 
-CMD ["1_🏠_Home.py"]
+CMD ["1_Home.py"]
 
