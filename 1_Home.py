@@ -1,14 +1,12 @@
 
-
-from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor, ServiceContext
+# Importing necessary libraries
+from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor, ServiceContext, LangchainEmbedding
 # Llamaindex also works with langchain framework to implement embeddings
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain import HuggingFaceHub
 from langchain.llms import HuggingFaceEndpoint
-from llama_index import GPTVectorStoreIndex
-from llama_index import LLMPredictor, ServiceContext, LangchainEmbedding
 
-#Storing the conversation history in a List
+# Storing the conversation history in a List
 conversation_history = []
 
 def ask_bot(input_text):
