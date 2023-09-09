@@ -1,9 +1,7 @@
 
 # Importing necessary libraries
 from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor, ServiceContext, LangchainEmbedding
-# Llamaindex also works with langchain framework to implement embeddings
-from langchain.embeddings.huggingface import HuggingFaceEmbeddings
-from langchain import HuggingFaceHub
+# Llamaindex also works with langchain framework to implement embeddings to configure the Falcon-7B-Instruct model from Hugging Face 
 from langchain.llms import HuggingFaceEndpoint
 
 # Storing the conversation history in a List
