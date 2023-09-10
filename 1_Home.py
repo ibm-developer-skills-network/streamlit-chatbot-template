@@ -7,7 +7,7 @@ from langchain.llms import HuggingFaceEndpoint
 from langchain.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain import HuggingFaceHub
 
-# Storing the conversation history in a List
+# Store the conversation history in a List
 conversation_history = []
 
 def ask_bot(input_text):
