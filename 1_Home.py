@@ -19,7 +19,7 @@ def ask_bot(input_text):
                 huggingfacehub_api_token="HuggingFace_API_KEY", # Replace with your own API key or use ours: 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
                 task="text-generation",
                 model_kwargs = {
-                    "max_new_tokens":200 # define the maximum number of tokens the model may produce in its answer         
+                    "max_new_tokens":1024 # define the maximum number of tokens the model may produce in its answer         
                 }
             )
     # LLMPredictor: to generate the text response (Completion)
