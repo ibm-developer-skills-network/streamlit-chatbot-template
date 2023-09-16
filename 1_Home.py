@@ -21,15 +21,15 @@ chat_history = []
 llm_hub = None
 embeddings = None
 
-Watsonx_API = "Watsonx_API"
-Project_id= "Project_id"
+Watsonx_API = "uvnQIfnjPk2Jpszy0hAvr80xCUAudclZsltCi3gYxAVu"
+Project_id= "177ab670-c7d0-4f34-894f-228297d644d9"
 
-# Function to initialize the language model and its embeddings
+# Function to initialize the Watsonx language model and its embeddings used to represent text data in a form (vectors) that machines can understand. 
 def init_llm():
     global llm_hub, embeddings
     
     params = {
-        GenParams.MAX_NEW_TOKENS: 250, # The maximum number of tokens that the model can generate in a single run.
+        GenParams.MAX_NEW_TOKENS: 1024, # The maximum number of tokens that the model can generate in a single run.
         GenParams.MIN_NEW_TOKENS: 1,   # The minimum number of tokens that the model should generate in a single run.
         GenParams.DECODING_METHOD: DecodingMethods.SAMPLE, # The method used by the model for decoding/generating new tokens. In this case, it uses the sampling method.
         GenParams.TEMPERATURE: 0.1,   # A parameter that controls the randomness of the token generation. A lower value makes the generation more deterministic, while a higher value introduces more randomness.
@@ -60,6 +60,9 @@ init_llm()
 # Store the conversation history in a List
 conversation_history = []
 
+# load the file
+documents = SimpleDirectoryReader(input_files=["data.txt"]).load_data()
+
 def ask_bot(input_text):
 
     # LLMPredictor: to generate the text response (Completion)
@@ -69,7 +72,6 @@ def ask_bot(input_text):
                                      
     # Hugging Face models can be supported by using LangchainEmbedding to convert text to embedding vector	
     embed_model = LangchainEmbedding(embeddings)
-    #embed_model = LangchainEmbedding(HuggingFaceEmbeddings())
     
     # ServiceContext: to encapsulate the resources used to create indexes and run queries    
     service_context = ServiceContext.from_defaults(
@@ -91,16 +93,17 @@ def ask_bot(input_text):
     Assistant:"""
     
     # This will wrap the default prompts that are internal to llama-index
-    query_wrapper_prompt = SimpleInputPrompt(f"{PROMPT_QUESTION}<|USER|>{input_text}<|ASSISTANT|>")
+    #query_wrapper_prompt = SimpleInputPrompt(f"{PROMPT_QUESTION}<|USER|>{input_text}<|ASSISTANT|>")
     
     # update conversation history
     global conversation_history
     history_string = "\n".join(conversation_history)
     print(f"history_string: {history_string}")  
-    # query LlamaIndex and Falcon-7B-Instruct for the AI's response
-    #output = index.as_query_engine().query(PROMPT_QUESTION.format(history=history_string, input=input_text))
+    
+    # query LlamaIndex and llama-2-70b-chat for the AI's response
     output = index.as_query_engine().query(input_text)
     print(f"output: {output}")   
+    
     # update conversation history with user input and AI's response
     conversation_history.append(input_text)
     conversation_history.append(output.response)
