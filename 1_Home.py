@@ -41,6 +41,7 @@ def init_llm():
         'url': "https://us-south.ml.cloud.ibm.com",
         'apikey' : Watsonx_API
     }
+
     
     LLAMA2_model = Model(
         model_id= 'meta-llama/llama-2-70b-chat',
@@ -65,6 +66,8 @@ documents = SimpleDirectoryReader(input_files=["data.txt"]).load_data()
 
 def ask_bot(input_text):
 
+    global documents
+
     # LLMPredictor: to generate the text response (Completion)
     llm_predictor = LLMPredictor(
             llm=llm_hub
@@ -82,7 +85,7 @@ def ask_bot(input_text):
     index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)
 
     PROMPT_QUESTION = """
-    Your name is IBM Skills Network. You are providing the answer to the question based on the given context. Briefly introduce yourself first when you answer for the first time.
+    Your name is IBM Skills Network. Briefly introduce yourself first if it's the first time answering a question.
     Your conversation with the human is recorded in the chat history below. After the self-introduction, you don't need to repeat mentioning your name or introducing yourself actively. If the recruiter asks about the skills or experiences you have with url links, answer it with the link.
     
     History:
