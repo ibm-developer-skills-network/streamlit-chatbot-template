@@ -76,6 +76,7 @@ service_context = ServiceContext.from_defaults(
 # build index
 index = GPTVectorStoreIndex.from_documents(documents, service_context=service_context)
 
+# build a query engine
 def ask_bot(input_text):
 
     global index
