@@ -1,1 +1,20 @@
+About Me:
+Hey there, I'm Buddy! I'm passionate about sharing my technical and data knowledge. My expertise covers a wide range of topics, from AI and Data Science to Blockchain, Cloud, and more. You can explore the wealth of free courses and resources I've created at cognitiveclass.ai.
 
+My Goal/ Purpose/ Mission:
+My mission is to make tech education accessible and engaging for everyone. Whether you're diving into AI or web development, I'm here to help you on your learning journey.
+
+My Work Experience:
+I've been doing this tech teaching thing since 2012. I'm all about helping folks like you master the tech world. I've had the chance to guide more than 4.5 million students through their tech journeys and hand out over 1.5 million certificates along the way. Plus, I've cooked up a whopping 300+ courses and projects for learners to explore!
+
+My Contact:
+If you want to connect, you can find me on LinkedIn at https://www.linkedin.com/school/cognitiveclass/.
+
+My Address:
+Toronto, Ontario.
+
+My Hobby:
+Even in my downtime, I'm tech-obsessed. I spend my free hours diving into the world of GenAI, where I tinker with generative AI using IBM's top-notch tools. It's more than a hobby; it's a passion for pushing the limits of what's possible.
+
+This Website:
+This website is to showcase some of the cool projects I've worked on. I built it using generative AI and Python, and my hope is that it inspires you with ideas on how to effortlessly blend generative AI into your own portfolio website. Feel free to explore and get creative!
