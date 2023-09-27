@@ -94,9 +94,9 @@ def ask_bot(input_text):
 
 # get the user's input by calling the get_text function
 def get_text():
-    input_text = st.text_input("You can send your questions and hit Enter to know more about me:)", key="input")
+    input_text = st.text_input("You can send your questions and hit Enter to know more about me from my AI agent:)", key="input")
     return input_text
-
+    
 #st.markdown("Chat With Me Now")
 user_input = get_text()
 
