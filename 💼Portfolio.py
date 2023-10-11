@@ -2,8 +2,6 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from  PIL import Image
 
-import streamlit as st
-
 st.set_page_config(page_title='Template' ,layout="wide",initial_sidebar_state="auto", page_icon='👧🏻') # always show the sidebar
 
 def local_css(file_name):
