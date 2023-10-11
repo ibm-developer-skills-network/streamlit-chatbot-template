@@ -1,0 +1,115 @@
+/* Change the sidebar color*/
+[data-testid=stSidebar] {
+  background: #F3F4F6;
+}
+
+/* Target the text color when hovering over the span element */
+.st-emotion-cache-1q1fytl.eczjsme5:hover,
+.st-emotion-cache-1aw8i8e.eczjsme5:hover,
+.st-emotion-cache-1aw8i8e.eczjsme5:hover {
+  color: #34D399; 
+}
+
+
+div.stButton > button:first-child {
+  min-width: 45px;
+  background: linear-gradient(0deg, #E5E7EB, #E5E7EB),
+              linear-gradient(0deg, #D1D5DB, #D1D5DB);
+  border: 1px solid #D1D5DB
+}
+div.stButton > button:hover {
+  background: linear-gradient(0deg, #34D399, #34D399),
+              linear-gradient(0deg, #10B981, #10B981);
+  border: 1px solid #10B981
+}
+
+div.stDownloadButton> button:first-child {
+  min-width: 45px;
+  background: linear-gradient(0deg, #E5E7EB, #E5E7EB),
+              linear-gradient(0deg, #D1D5DB, #D1D5DB);
+  border: 1px solid #D1D5DB
+}
+div.stDownloadButton> button:hover {
+  background: linear-gradient(0deg, #34D399, #34D399),
+              linear-gradient(0deg, #10B981, #10B981);
+  border: 1px solid #10B981
+}
+
+
+
+p{
+  color: black
+}
+
+.st-ck {
+  caret-color: black;
+}
+
+.st-bh, .st-c2, .st-c3, .st-c4, .st-c5, .st-c6, .st-c7, .st-c8, .st-c9, .st-ca, .st-cb, .st-b8, .st-cc, .st-cd, .st-ce, .st-cf, .st-cg, .st-ch, .st-ci, .st-cj, .st-ae, .st-af, .st-ag, .st-ck, .st-ai, .st-aj, .st-c1, .st-cl, .st-cm, .st-cn {
+  color: black;
+}
+
+/* Style the contact form */
+input[type=message], input[type=email], input[type=text], textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+button[type=submit] {
+  background: linear-gradient(0deg, #34D399, #34D399),
+  linear-gradient(0deg, #10B981, #10B981);
+  width: Hug (248px);
+  height: Fixed (48px);
+  top: 364px;
+  left: 381px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px;
+  gap: 10px;
+  border: 1px solid #10B981
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.st-emotion-cache-1xtop7k{
+  background-color: black
+}
+
+/* Hide Streamlit Branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #001d6c;
+  color: white;
+  text-align: center;
+}
+
+/*chatbot*/
+.css-4oy321, .st-emotion-cache-4oy321 {
+  background-color: #0c43bc;
+} /*  #0a3696 */
+.css-4oy321 p, .st-emotion-cache-4oy321 p, .css-4oy321 ol, .st-emotion-cache-4oy321 ol{
+  color: #fafafa;
+}
+.css-4oy321 p a, .st-emotion-cache-4oy321 p a {
+  color: lightgreen;
+}
+
+
