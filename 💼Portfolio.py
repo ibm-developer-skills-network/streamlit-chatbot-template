@@ -5,13 +5,14 @@ from streamlit_option_menu import option_menu
 #  configure page settings
 st.set_page_config(page_title='Template' ,layout="wide",initial_sidebar_state="auto", page_icon='👧🏻') # always show the sidebar
 
+# load local CSS styles
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
         
 local_css("styles/styles_main.css")
     
-# App Sidebar
+# app sidebar
 with st.sidebar:
     st.markdown("""
                 # Chat with my AI assistant
