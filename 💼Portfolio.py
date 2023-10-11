@@ -1,7 +1,8 @@
+# import the Streamlit library
 import streamlit as st
 from streamlit_option_menu import option_menu
-from  PIL import Image
 
+#  configure page settings
 st.set_page_config(page_title='Template' ,layout="wide",initial_sidebar_state="auto", page_icon='👧🏻') # always show the sidebar
 
 def local_css(file_name):
@@ -76,7 +77,8 @@ def change_button_color(widget_label, background_color='transparent'):
     components.html(f"{htmlstr}", height=0, width=0)
 
 change_button_color('Chat with My AI Assistant', '#0cc789') 
-            
+
+from  PIL import Image
 with col2:
     profile = Image.open("images/profile.png")
     st.image(profile, width=280)
