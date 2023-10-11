@@ -1,0 +1,62 @@
+/* Change the sidebar color*/
+[data-testid=stSidebar] {
+  background: #F3F4F6;
+}
+
+.css-10trblm.eqr7zpz0 {
+    text-align: left;
+}
+
+
+/* Target the text color when hovering over the span element */
+.st-emotion-cache-1q1fytl.eczjsme5:hover,
+.st-emotion-cache-1aw8i8e.eczjsme5:hover,
+.st-emotion-cache-1aw8i8e.eczjsme5:hover {
+  color: #34D399; 
+}
+
+a:hover {
+  color: #34D399; 
+}
+
+p{
+  color: black
+}
+
+.st-ck {
+  caret-color: black;
+}
+
+.st-bh, .st-c2, .st-c3, .st-c4, .st-c5, .st-c6, .st-c7, .st-c8, .st-c9, .st-ca, .st-cb, .st-b8, .st-cc, .st-cd, .st-ce, .st-cf, .st-cg, .st-ch, .st-ci, .st-cj, .st-ae, .st-af, .st-ag, .st-ck, .st-ai, .st-aj, .st-c1, .st-cl, .st-cm, .st-cn {
+  color: black;
+}
+
+/* Style the contact form */
+input[type=message], input[type=email], input[type=text], textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical
+}
+
+
+.st-emotion-cache-1xtop7k{
+  background-color: black
+}
+
+
+div.stButton > button:first-child {
+  min-width: 45px;
+  background: linear-gradient(0deg, #E5E7EB, #E5E7EB),
+              linear-gradient(0deg, #D1D5DB, #D1D5DB);
+  border: 1px solid #D1D5DB
+}
+div.stButton > button:hover {
+  background: linear-gradient(0deg, #34D399, #34D399),
+              linear-gradient(0deg, #10B981, #10B981);
+  border: 1px solid #10B981
+}
