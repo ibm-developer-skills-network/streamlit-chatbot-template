@@ -39,8 +39,6 @@ with st.sidebar:
 
 import requests
 
-
-
 def hero(content1, content2):
     st.markdown(f'<h1 style="text-align:center;font-size:60px;border-radius:2%;">'
                 f'<span>{content1}</span><br>'
@@ -94,62 +92,7 @@ with st.container():
     st.write("---")
     st.subheader('🚀 Project Showcase')
 
-    projects = [
-        {
-            "title": "Unlocking Multilingual Magic: Babel Fish with LLM STT TTS",
-            "description": "Text-to-Speech, Speech-To-Text, LLM, watsonx",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/babel.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX0PPIEN+v1"
-        },
-        {
-            "title": "Summarize Your Private Data with LLMs & Generative AI",
-            "description": "LLM, watsonx, watsonx.ai",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/summary.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX0DTPEN+v1"
-        },      
-        {
-            "title": "Improve Customer Support Efficiency with Open-Source LLM",
-            "description": "Generative AI",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/CS.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX0FUSEN+v1"
-        },
-        {
-            "title": "A Quick Introduction to Machine Learning",
-            "description": "Machine Learning",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/ML.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+ML0104EN+v1"
-        },
-        {
-            "title": "Reinforcement Learning and Deep Learning Essentials",
-            "description": "Reinforcement Learning, Keras, PyTorch",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/RL.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+ML0105EN+v1"
-        },
-        {
-            "title": "Automate ML Pipelines Using Apache Airflow",
-            "description": "Machine Learning Pipeline",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/airflow.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBM+GPXX0DNQEN+v1"
-        },
-        {
-            "title": "Create Your Own ChatGPT-like Website with Open Source LLMs",
-            "description": "LLM, Chatbot, Generative AI",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/chatgpt.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX04ESEN+v1"
-        },
-        {
-            "title": "A Quick Introduction to Machine Learning",
-            "description": "Machine Learning",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/ML.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+ML0104EN+v1"
-        },
-        {
-            "title": "Build an AI Web App for Diamond Price Prediction",
-            "description": "Machine Learning, Data Science",
-            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/diamond.png",
-            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX0FTNEN+v1"
-        }                  
-    ]
+    projects = Projects
 
     def display_project(col, project):
         with col:
