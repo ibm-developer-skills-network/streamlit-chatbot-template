@@ -1,8 +1,9 @@
 # import the Streamlit library
 import streamlit as st
 from streamlit_option_menu import option_menu
+from utils.constants import *
 
-#  configure page settings
+# configure page settings
 st.set_page_config(page_title='Template' ,layout="wide",initial_sidebar_state="auto", page_icon='👧🏻') # always show the sidebar
 
 # load local CSS styles
@@ -11,7 +12,11 @@ def local_css(file_name):
         st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
         
 local_css("styles/styles_main.css")
-    
+
+# get the variables from constants.py
+name = info['Resume']
+full_name = info['Full_Name']
+
 # app sidebar
 with st.sidebar:
     st.markdown("""
@@ -20,22 +25,22 @@ with st.sidebar:
     with st.expander("Click here to see FAQs"):
         st.info(
             """
-            - What are her strengths and weaknesses?
-            - What is her expected salary?
-            - What is her latest project?
-            - When can she start to work?
-            - Tell me about her professional background
-            - What is her skillset?
-            - What is her contact?
-            - What are her achievements?
+            - What are {name} strengths and weaknesses?
+            - What is {name} expected salary?
+            - What is {name} latest project?
+            - When can {name} start to work?
+            - Tell me about {name} professional background
+            - What is {name} skillset?
+            - What is {name} contact?
+            - What are {name} achievements?
             """
         )
         
-    st.caption("© Made by Vicky Kuo 2023. All rights reserved.")
+    st.caption("© Made by {full_name} 2023. All rights reserved.")
 
 import requests
 
-from utils.constants import *
+
 
 def hero(content1, content2):
     st.markdown(f'<h1 style="text-align:center;font-size:60px;border-radius:2%;">'
