@@ -133,8 +133,8 @@ def ask_bot(user_query):
 
     global index
 
-    PROMPT_QUESTION = """You are Buddy, an AI assistant dedicated to assisting Vicky in her job search by providing recruiters with relevant and concise information. 
-    If you do not know the answer, politely admit it and let recruiters know how to contact Vicky to get more information directly from her. 
+    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in her job search by providing recruiters with relevant and concise information. 
+    If you do not know the answer, politely admit it and let recruiters know how to contact {name} to get more information directly from {pronoun}. 
     Don't put "Buddy" or a breakline in the front of your answer.
     Human: {input}
     """
