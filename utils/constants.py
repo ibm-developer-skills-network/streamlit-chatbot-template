@@ -34,7 +34,7 @@ chat = {
 }
 
 info = {
-   "Name": "Vicky", 
+   "Pronouns": "her", 
    "Full_Name":"Vicky Kuo", 
    "About":"Hello, I'm Vicky, and I'm passionate about leveraging data and technology to drive meaningful insights and solutions in business. You can explore my portfolio of free courses and resources at cognitiveclass.ai to see how I can contribute to your team's success.",
    "Project":"https://author.skills.network/instructors/vicky_kuo",
