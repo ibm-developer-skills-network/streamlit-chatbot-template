@@ -46,6 +46,62 @@ info = {
    "Email": "vicky.kuo.contact@gmail.com" 
 }
 
+Projects = [
+        {
+            "title": "Unlocking Multilingual Magic: Babel Fish with LLM STT TTS",
+            "description": "Text-to-Speech, Speech-To-Text, LLM, watsonx",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/babel.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX0PPIEN+v1"
+        },
+        {
+            "title": "Summarize Your Private Data with LLMs & Generative AI",
+            "description": "LLM, watsonx, watsonx.ai",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/summary.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX0DTPEN+v1"
+        },      
+        {
+            "title": "Improve Customer Support Efficiency with Open-Source LLM",
+            "description": "Generative AI",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/CS.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX0FUSEN+v1"
+        },
+        {
+            "title": "A Quick Introduction to Machine Learning",
+            "description": "Machine Learning",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/ML.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+ML0104EN+v1"
+        },
+        {
+            "title": "Reinforcement Learning and Deep Learning Essentials",
+            "description": "Reinforcement Learning, Keras, PyTorch",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/RL.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+ML0105EN+v1"
+        },
+        {
+            "title": "Automate ML Pipelines Using Apache Airflow",
+            "description": "Machine Learning Pipeline",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/airflow.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBM+GPXX0DNQEN+v1"
+        },
+        {
+            "title": "Create Your Own ChatGPT-like Website with Open Source LLMs",
+            "description": "LLM, Chatbot, Generative AI",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/chatgpt.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX04ESEN+v1"
+        },
+        {
+            "title": "A Quick Introduction to Machine Learning",
+            "description": "Machine Learning",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/ML.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+ML0104EN+v1"
+        },
+        {
+            "title": "Build an AI Web App for Diamond Price Prediction",
+            "description": "Machine Learning, Data Science",
+            "image_url": "https://sn-assets.s3.us.cloud-object-storage.appdomain.cloud/projects/diamond.png",
+            "link": "https://cognitiveclass.ai/courses/course-v1:IBMSkillsNetwork+GPXX0FTNEN+v1"
+        }                  
+    ]
 embed_rss= {
     'rss':"""<div style="overflow-y: scroll; height:500px; background-color:white;"> <div id="retainable-rss-embed" 
         data-rss="https://medium.com/feed/@vicky-note"
