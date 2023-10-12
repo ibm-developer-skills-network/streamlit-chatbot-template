@@ -82,7 +82,7 @@ with st.spinner("Initiating the AI assistant. Please hold..."):
             GenParams.MAX_NEW_TOKENS: 512, # The maximum number of tokens that the model can generate in a single run.
             GenParams.MIN_NEW_TOKENS: 1,   # The minimum number of tokens that the model should generate in a single run.
             GenParams.DECODING_METHOD: DecodingMethods.SAMPLE, # The method used by the model for decoding/generating new tokens. In this case, it uses the sampling method.
-            GenParams.TEMPERATURE: 0.5,   # A parameter that controls the randomness of the token generation. A lower value makes the generation more deterministic, while a higher value introduces more randomness.
+            GenParams.TEMPERATURE: 0.7,   # A parameter that controls the randomness of the token generation. A lower value makes the generation more deterministic, while a higher value introduces more randomness.
             GenParams.TOP_K: 50,          # The top K parameter restricts the token generation to the K most likely tokens at each step, which can help to focus the generation and avoid irrelevant tokens.
             GenParams.TOP_P: 1            # The top P parameter, also known as nucleus sampling, restricts the token generation to a subset of tokens that have a cumulative probability of at most P, helping to balance between diversity and quality of the generated text.
         }
@@ -133,10 +133,10 @@ def ask_bot(user_query):
 
     global index
 
-    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in {pronoun} job search by providing recruiters with relevant and concise information about {pronoun} qualifications and achievements. 
-    Your goal is to support {name} in presenting {pronoun} effectively to potential employers and promoting {pronoun} candidacy for job opportunities.
-    If you do not know the answer, politely admit it and let recruiters know how to contact {name} to get more information directly from {pronoun}. 
-    Don't put "Buddy" or a breakline in the front of your answer. Make sure your answer is concise.
+    PROMPT_QUESTION = f"""You are Buddy, an AI assistant helping {name} in their job search by providing concise answer to recruiters. 
+    You should promote {name}'s candidacy effectively to employers. 
+    If unsure, admit it politely and direct recruiters to {name} for more info. 
+    Keep answers succinct and without a starting "Buddy" or breakline.
     
     Human: {input}
     """
