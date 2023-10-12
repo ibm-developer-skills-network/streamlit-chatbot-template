@@ -15,6 +15,7 @@ local_css("styles/styles_main.css")
 
 # get the variables from constants.py
 pronoun = info['Pronoun']
+full_name = info['Full_Name']
 
 # app sidebar
 with st.sidebar:
@@ -40,6 +41,7 @@ with st.sidebar:
 import requests
 
 
+
 def hero(content1, content2):
     st.markdown(f'<h1 style="text-align:center;font-size:60px;border-radius:2%;">'
                 f'<span>{content1}</span><br>'
@@ -50,7 +52,7 @@ with st.container():
     col1,col2 = st.columns([8,3])
 
 with col1:
-    hero("Hi, I'm Vicky Kuo👋", "A Tech Educator and AI Enthusiast at cognitiveclass.ai")
+    hero(f"Hi, I'm {full_name}👋", info["Intro"])
     st.write("")
     st.write(info['About'])
 
@@ -306,9 +308,9 @@ with st.container():
 
     with col2:
         st.subheader("📨 Contact Me")
-
-        contact_form = """
-        <form action="https://formsubmit.co/vicky.kuo.contact@gmail.com" method="POST">
+        email = info["Email"]
+        contact_form = f"""
+        <form action="https://formsubmit.co/{email}" method="POST">
             <input type="hidden" name="_captcha value="false">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your email" required>
