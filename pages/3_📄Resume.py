@@ -10,28 +10,30 @@ def local_css(file_name):
         
 local_css("styles/styles_main.css")
     
-# App Sidebar
+# get the variables from constants.py
+pronoun = info['Pronoun']
+full_name = info['Full_Name']
+
+# app sidebar
 with st.sidebar:
-    # Description
     st.markdown("""
                 # Chat with my AI assistant
                 """)
-
     with st.expander("Click here to see FAQs"):
         st.info(
-            """
-            - What are her strengths and weaknesses?
-            - What is her expected salary?
-            - What is her latest project?
-            - When can she start to work?
-            - Tell me about her professional background
-            - What is her skillset?
-            - What is her contact?
-            - What are her achievements?
+            f"""
+            - What are {pronoun} strengths and weaknesses?
+            - What is {pronoun} expected salary?
+            - What is {pronoun} latest project?
+            - When can {pronoun} start to work?
+            - Tell me about {pronoun} professional background
+            - What is {pronoun} skillset?
+            - What is {pronoun} contact?
+            - What are {pronoun} achievements?
             """
         )
         
-    st.caption("© Made by Vicky Kuo 2023. All rights reserved.")
+    st.caption(f"© Made by {full_name} 2023. All rights reserved.")
  
 st.title("📝 Resume")
 
