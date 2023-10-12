@@ -15,7 +15,6 @@ local_css("styles/styles_main.css")
 
 # get the variables from constants.py
 pronoun = info['Pronoun']
-full_name = info['Full_Name']
 
 # app sidebar
 with st.sidebar:
@@ -36,10 +35,9 @@ with st.sidebar:
             """
         )
         
-    st.caption(f"© Made by {full_name} 2023. All rights reserved.")
+    st.caption(f"© Made by Vicky Kuo 2023. All rights reserved.")
 
 import requests
-
 
 
 def hero(content1, content2):
