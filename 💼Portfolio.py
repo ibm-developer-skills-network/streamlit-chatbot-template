@@ -14,7 +14,7 @@ def local_css(file_name):
 local_css("styles/styles_main.css")
 
 # get the variables from constants.py
-name = info['Resume']
+pronoun = info['Pronoun']
 full_name = info['Full_Name']
 
 # app sidebar
@@ -25,14 +25,14 @@ with st.sidebar:
     with st.expander("Click here to see FAQs"):
         st.info(
             """
-            - What are {name} strengths and weaknesses?
-            - What is {name} expected salary?
-            - What is {name} latest project?
-            - When can {name} start to work?
-            - Tell me about {name} professional background
-            - What is {name} skillset?
-            - What is {name} contact?
-            - What are {name} achievements?
+            - What are {pronoun} strengths and weaknesses?
+            - What is {pronoun} expected salary?
+            - What is {pronoun} latest project?
+            - When can {pronoun} start to work?
+            - Tell me about {pronoun} professional background
+            - What is {pronoun} skillset?
+            - What is {pronoun} contact?
+            - What are {pronoun} achievements?
             """
         )
         
