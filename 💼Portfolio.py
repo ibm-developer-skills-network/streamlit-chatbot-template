@@ -24,7 +24,7 @@ with st.sidebar:
                 """)
     with st.expander("Click here to see FAQs"):
         st.info(
-            """
+            f"""
             - What are {pronoun} strengths and weaknesses?
             - What is {pronoun} expected salary?
             - What is {pronoun} latest project?
@@ -36,7 +36,7 @@ with st.sidebar:
             """
         )
         
-    st.caption("© Made by {full_name} 2023. All rights reserved.")
+    st.caption(f"© Made by {full_name} 2023. All rights reserved.")
 
 import requests
 
