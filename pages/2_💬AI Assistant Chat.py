@@ -1,5 +1,5 @@
 import streamlit as st
-# Import necessary libraries
+from utils.constants import *
 import torch
 from llama_index import GPTVectorStoreIndex, SimpleDirectoryReader, LLMPredictor, ServiceContext, LangchainEmbedding
 # Llamaindex also works with langchain framework to implement embeddings
@@ -18,28 +18,32 @@ def local_css(file_name):
         
 local_css("styles/styles_chat.css")
 
+# get the variables from constants.py
+pronoun = info['Pronoun']
+full_name = info['Full_Name']
+name = info['Name']
+
 if "messages" not in st.session_state.keys():
-    welcome_msg = "Hi! I'm Vicky's AI Assistant, Buddy. How may I assist you today?"
+    welcome_msg = f"Hi! I'm {name}'s AI Assistant, Buddy. How may I assist you today?"
     st.session_state.messages = [{"role": "assistant", "content": welcome_msg}]
    
  
-# App Sidebar
+# app sidebar
 with st.sidebar:
     st.markdown("""
                 # Chat with my AI assistant
                 """)
-
     with st.expander("Click here to see FAQs"):
         st.info(
-            """
-            - What are her strengths and weaknesses?
-            - What is her expected salary?
-            - What is her latest project?
-            - When can she start to work?
-            - Tell me about her professional background
-            - What is her skillset?
-            - What is her contact?
-            - What are her achievements?
+            f"""
+            - What are {pronoun} strengths and weaknesses?
+            - What is {pronoun} expected salary?
+            - What is {pronoun} latest project?
+            - When can {pronoun} start to work?
+            - Tell me about {pronoun} professional background
+            - What is {pronoun} skillset?
+            - What is {pronoun} contact?
+            - What are {pronoun} achievements?
             """
         )
     
@@ -58,7 +62,7 @@ with st.sidebar:
             st.session_state.messages = [{"role": "assistant", "content": welcome_msg}]
         col1.button('New Chat', on_click=clear_chat_history)
         
-    st.caption("© Made by Vicky Kuo 2023. All rights reserved.")
+    st.caption(f"© Made by {full_name} 2023. All rights reserved.")
 
 with st.spinner("Initiating the AI assistant. Please hold..."):
     # Check for GPU availability and set the appropriate device for computation.
@@ -130,9 +134,9 @@ def ask_bot(user_query):
 
     global index
 
-    PROMPT_QUESTION = """You are Buddy, an AI assistant dedicated to assisting Vicky in her job search by providing recruiters with relevant and concise information about her qualifications and achievements. 
-    Your goal is to support Vicky in presenting herself effectively to potential employers and promoting her candidacy for job opportunities.
-    If you do not know the answer, politely admit it and let recruiters know how to contact Vicky to get more information directly from her. 
+    PROMPT_QUESTION = f"""You are Buddy, an AI assistant dedicated to assisting {name} in {pronoun} job search by providing recruiters with relevant and concise information about {pronoun} qualifications and achievements. 
+    Your goal is to support {name} in presenting {pronoun} effectively to potential employers and promoting {pronoun} candidacy for job opportunities.
+    If you do not know the answer, politely admit it and let recruiters know how to contact {name} to get more information directly from {pronoun}. 
     Don't put "Buddy" or a breakline in the front of your answer.
     Human: {input}
     """
@@ -162,9 +166,9 @@ if st.session_state.messages[-1]["role"] != "assistant":
 
 # Suggested questions
 questions = [
-    'What are her strengths and weaknesses?',
-    'What is her expected salary?',
-    'What is her latest project?'
+    f'What are {pronoun} strengths and weaknesses?',
+    f'What is {pronoun} expected salary?',
+    f'What is {pronoun} latest project?'
 ]
 
 def send_button_ques(question):
