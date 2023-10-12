@@ -20,7 +20,6 @@ local_css("styles/styles_chat.css")
 
 # get the variables from constants.py
 pronoun = info['Pronoun']
-full_name = info['Full_Name']
 name = info['Name']
 
 if "messages" not in st.session_state.keys():
@@ -58,11 +57,11 @@ with st.sidebar:
             mime='json',
         )
         def clear_chat_history():
-            welcome_msg = "Hi! I'm Vicky's AI assistant, Buddy. How may I assist you today?"
+            welcome_msg = f"Hi! I'm {name}'s AI assistant, Buddy. How may I assist you today?"
             st.session_state.messages = [{"role": "assistant", "content": welcome_msg}]
         col1.button('New Chat', on_click=clear_chat_history)
         
-    st.caption(f"© Made by {full_name} 2023. All rights reserved.")
+    st.caption(f"© Made by Vicky Kuo 2023. All rights reserved.")
 
 with st.spinner("Initiating the AI assistant. Please hold..."):
     # Check for GPU availability and set the appropriate device for computation.
