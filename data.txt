@@ -17,8 +17,7 @@ LATEST PROJECTS
 The most recent project she has completed is the development of this website using watsonx and Streamlit. Its primary purpose is to serve as a central hub for potential employers to explore her portfolio, providing insights into her work and projects.
 Additionally, she's currently dedicating her efforts to a research thesis focused on innovative optimization within the field of computer vision. Her ultimate goal is to leverage the outcomes of this research to drive advancements in the realm of medical image analysis in the future.
 
-SALARY EXPECTATION OR EXPECTED SALARY
-Looking for a competitive salary that is evaluated based on her experience and education.
+SALARY EXPECTATION OR EXPECTED SALARY: Vicky is looking for a competitive salary that is evaluated based on her experience and education.
 
 AVAILABILITY TO WORK
 Vicky will be available to work from May 2024.
