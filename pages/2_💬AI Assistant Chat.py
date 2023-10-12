@@ -110,7 +110,7 @@ with st.spinner("Initiating the AI assistant. Please hold..."):
     init_llm()
     
     # load the file
-    documents = SimpleDirectoryReader(input_files=["data.txt"]).load_data()
+    documents = SimpleDirectoryReader(input_files=["bio.txt"]).load_data()
     
     # LLMPredictor: to generate the text response (Completion)
     llm_predictor = LLMPredictor(
