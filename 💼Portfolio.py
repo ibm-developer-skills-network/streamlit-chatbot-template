@@ -86,8 +86,7 @@ from  PIL import Image
 with col2:
     profile = Image.open("images/profile.png")
     st.image(profile, width=280)
-
-            
+          
 with st.container():
     st.write("---")
     st.subheader('🚀 Project Showcase')
@@ -106,7 +105,7 @@ with st.container():
     col1, col2, col3 = st.columns([1,1,1])
     columns = [col1, col2, col3]
 
-    # Adjust the range(0, len(projects), 3) accordingly if your projects length is not a multiple of 3
+    # adjust the range(0, len(projects), 3) accordingly if the length of your projects is not a multiple of 3
     for i in range(0, len(projects), 3):
         for j, col in enumerate(columns):
             if i + j < len(projects):  # Check if project index is within range
