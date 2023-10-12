@@ -92,7 +92,7 @@ with st.container():
     st.write("---")
     st.subheader('🚀 Project Showcase')
 
-    projects = Projects
+    projects = projects
 
     def display_project(col, project):
         with col:
