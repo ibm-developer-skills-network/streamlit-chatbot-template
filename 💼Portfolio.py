@@ -113,10 +113,6 @@ with st.container():
                 display_project(col, projects[i + j])
 st.markdown(""" <a href={}> <em>👀 Click here to see more </a>""".format(info['Project']), unsafe_allow_html=True)
     
-
-
-import streamlit.components.v1 as components
-    
 with st.container():
     st.markdown("""""")
     st.subheader('✍️ Medium')
