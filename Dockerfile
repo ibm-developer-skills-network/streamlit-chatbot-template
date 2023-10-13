@@ -23,4 +23,4 @@ EXPOSE 8501
 ENTRYPOINT ["streamlit", "run"]
 
 # Specify the default Streamlit application script to run
-CMD ["1_Home.py"]
+CMD ["💼Portfolio.py"]
