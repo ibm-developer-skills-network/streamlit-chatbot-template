@@ -115,7 +115,6 @@ st.markdown(""" <a href={}> <em>👀 Click here to see more </a>""".format(info[
 with st.container():
     st.markdown("""""")
     st.subheader('✍️ Medium')
-    page = requests.get(info['Medium'])
     col1,col2 = st.columns([0.95, 0.05])
     components.html(embed_rss['rss'],height=300)
     st.markdown(""" <a href={}> <em>👀 Click here to see more</a>""".format(info['Medium']), unsafe_allow_html=True)
