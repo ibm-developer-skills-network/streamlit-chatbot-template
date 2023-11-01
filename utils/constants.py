@@ -35,6 +35,7 @@ chat = {
 
 info = {
    "Pronoun": "her", 
+   "Subject": "she", 
    "Name": "Vicky",
    "Full_Name":"Vicky Kuo", 
    "Intro": "A Tech Educator and AI Enthusiast at cognitiveclass.ai",
